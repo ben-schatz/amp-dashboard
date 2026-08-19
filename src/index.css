@@ -1,0 +1,60 @@
+:root {
+  --page-bg: #0a0f1d;
+  --page-bg-accent: rgba(95, 118, 255, 0.2);
+  --card-bg: rgba(15, 23, 42, 0.74);
+  font-family: Inter, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #edf3ff;
+  background:
+    radial-gradient(circle at top, var(--page-bg-accent), transparent 30%),
+    linear-gradient(180deg, var(--page-bg) 0%, #0d1324 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme='midnight'] {
+  --page-bg: #0a0f1d;
+  --page-bg-accent: rgba(95, 118, 255, 0.22);
+}
+
+:root[data-theme='violet'] {
+  --page-bg: #140d1f;
+  --page-bg-accent: rgba(180, 95, 255, 0.26);
+}
+
+:root[data-theme='forest'] {
+  --page-bg: #081712;
+  --page-bg-accent: rgba(69, 170, 107, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--page-bg);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  appearance: none;
+}
+
+#root {
+  min-height: 100vh;
+}
